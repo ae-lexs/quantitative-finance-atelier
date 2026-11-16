@@ -1,0 +1,7 @@
+services:
+  lab:
+    build: .
+    ports:
+      - "127.0.0.1:8888:8888"   # localhost only: the Jupyter token is disabled
+    volumes:
+      - .:/work                  # notebooks and data persist on the host
